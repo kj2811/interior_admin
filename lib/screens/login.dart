@@ -60,9 +60,11 @@ class _LoginPageState extends State<LoginPage> {
     Widget destinationScreen;
     switch (roleId) {
       case 'manager':
+        print("entered");
         destinationScreen = const ManagerScreen();
         break;
       case 'employee':
+        print("enter emp");
         destinationScreen = const EmployeeScreen();
         break;
       default:
